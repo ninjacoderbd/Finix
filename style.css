@@ -120,18 +120,40 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 50px;
     color: #E74244;
 }
-.aboutDsc h6{
+.ltlDsc h6{
     color: tomato;
 }
-.aboutDsc h2{
+.ltlDsc h2{
     font-size: 38px;
     font-weight: 500;
 }
 
+/* Why people chose us section */
 
+.whyPeopleChose{
+    background: #F9FAFB;
+  
+}
+.choseImg{
+    position: relative;
+}
 
+.whyPeopleChose .playBtn{
+    content: "";
+    position: absolute;
+    right: 190px;
+    bottom: 56px;
+    font-size: 60px;
+    color: #E83B3E;
+}
+.playBtn i{
+    padding: 0;
+    margin: 0;
+    background:#fff;
+    border: 5px solid white;
+    border-radius: 50%;
 
-
+}
 
 
 
