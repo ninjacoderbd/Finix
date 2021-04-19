@@ -1,0 +1,142 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+/* Reusable component */
+.dfltBtn{
+    background: #ee3939 !important;
+    border: none;
+    color: #fff;
+
+    position: relative;
+    z-index: 1;
+}
+
+.dfltBtn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #000;
+    border-radius: 6%;
+
+    z-index: -1;
+    transition: ease-in-out .5s;
+}  
+.dfltBtn:hover::before{
+    width: 100%;
+}
+
+/* Header css */
+.mainMenu{
+    box-shadow: 0px 5px 10px 0px rgba(182, 172, 172, 0.52);
+    background:#fff;
+}
+.headerSrch i{
+    font-size:30px;
+    border-right: 1px solid #ddd;
+    padding: 5px;
+    padding-right: 15px;
+}
+.headerContactInfo a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    width: 200px;
+}
+.headerBtn{
+    width: 150px;
+}
+
+/* Hero Aria Section */
+.heroAria{
+    background:url('img/main-banner2.jpg') no-repeat top center/cover fixed;
+}
+.heroWraper{
+    height: 90vh;
+    position: relative;
+}
+.heroSocialIcon{
+    position: absolute;
+    left: 12px;
+    bottom: 0;
+}
+.heroContent{
+    width: 50%;
+}
+.heroContent h5{
+    color: #ee3939;
+}
+.heroContent h1{
+    font-size: 50px;
+}
+.heroContent p{
+    color: #776464;
+    margin: 15px 0;
+}
+.heroSocialIcon ul li i{
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+}
+.heroSocialIcon span{
+    margin-right: 50px;
+    position: relative;
+}
+.heroSocialIcon span::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 45px;
+    background: #000;
+    top: 55%;
+    left: 70px;
+
+}
+
+/* About Section */
+
+.aboutImg{
+    position: relative;
+}
+.aboutImgText{
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -15px;
+    text-align: center;
+    background: url("img/shape.png") center center/contain no-repeat;
+    height: 180px;
+    width: 180px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.innerText h2{
+    font-size: 50px;
+    color: #E74244;
+}
+.aboutDsc h6{
+    color: tomato;
+}
+.aboutDsc h2{
+    font-size: 38px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
