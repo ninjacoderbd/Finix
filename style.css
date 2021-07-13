@@ -136,6 +136,7 @@ h1,h2,h3,h4,h5,h6,a{
 }
 .choseImg{
     position: relative;
+    
 }
 
 .whyPeopleChose .playBtn{
@@ -145,7 +146,40 @@ h1,h2,h3,h4,h5,h6,a{
     bottom: 56px;
     font-size: 60px;
     color: #E83B3E;
+
 }
+
+.whyPeopleChose .playBtn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    background: rgb(238, 43, 43);
+    border-radius: 50%;
+
+    animation: playbtn 1s ease-in infinite;
+
+}
+
+@keyframes playbtn {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.3);
+        opacity: .5;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+}
+
 .playBtn i{
     padding: 0;
     margin: 0;
@@ -155,6 +189,48 @@ h1,h2,h3,h4,h5,h6,a{
 
 }
 
+.featuresItems{
+    background:#fff;
+    padding: 15px;
+    padding-top: 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+.margin{
+    margin-top: -20px;
+}
+.featuresItems:hover{
+    transform: translateY(-15px);
+    transition: .5s;
+}
+.featuresItems:hover .icon i{
+    background: #f0484a;
+    color: #fff;
+}
+.featuresItems::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -215px;
+    height: 90%;
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+    background: #FFEDEA;
+    
+}
+.icon i{
+    color: #E83B3E;
+    font-size: 30px;
+    background:#Fff;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
 
 
 
